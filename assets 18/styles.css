@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #4B4C7F;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #3C3C6A;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s; 
+    margin-top: 270px;
+}
+
+.icon.active {
+    background-color: #1C1C4F;
+    transform: scale(1.1);
+}
+
+.icon:hover {
+    background-color: #2A2A5A;
+}
+
+
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+}
+
+
+
+
+
+.card {
+    width: 250px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8rem;
+}
+
+.card-image img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.location {
+    color: #666;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.location a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    background: url('/assets 18/img/location.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.items {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #666;
+}
+
+.items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-weight: 400;
+    transition: font-weight 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.items li:hover span {
+    font-weight: bold; 
+    font-size: 1.2em; 
+    transition: font-size 0.2s ease-in-out, font-weight 0.2s ease-in-out;
+}
