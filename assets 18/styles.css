@@ -42,7 +42,7 @@ body {
 
 .icon.active {
     background-color: #1C1C4F;
-    transform: scale(0.1);
+    transform: scale(15.1);
 }
 
 .icon:hover {
