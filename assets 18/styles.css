@@ -22,7 +22,11 @@ body {
     gap: 0.5rem;
     margin-bottom: 2rem;
 }
-
+.menu-icon {
+    width: 30px;
+    height: 30px; 
+    object-fit: contain; 
+}
 
 
 
@@ -42,7 +46,7 @@ body {
 
 .icon.active {
     background-color: #1C1C4F;
-    transform: scale(15.1);
+    transform: scale(1.1);
 }
 
 .icon:hover {
